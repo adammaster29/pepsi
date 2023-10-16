@@ -1,0 +1,213 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.App {
+  width: 100%;
+  height: 100%;
+}
+.padre__home {
+  background: #173b7c;
+  color: #fff;
+  height: 100vh;
+}
+.nav__navbar {
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10px 0 10px;
+}
+.bx-menu {
+  display: none;
+}
+img {
+  width: 100%;
+  height: 100%;
+}
+.navbar__img-logo {
+  width: 100px;
+  height: 39px;
+  object-fit: contain;
+  transform: scale(1.2);
+}
+ul {
+  display: flex;
+  /* gap: 2rem; */
+  align-items: center;
+  justify-content: space-around;
+  /* border: 1px solid #000; */
+  width: 100%;
+  list-style: none;
+  font-size: 19px;
+  font-weight: 700;
+  text-shadow: 2px 2px 2px rgb(134, 134, 134), -2px 2px 2px rgb(26, 36, 29);
+}
+.navbar__button {
+  background: none;
+  color: #fff;
+  width: 150px;
+  height: 27px;
+  border-radius: 12px;
+  border: 1px solid #fff;
+}
+.contenedor__especificaciones button:hover,
+.navbar__button:hover {
+  background: #fff;
+  color: #173b7c;
+  font-weight: 800;
+}
+/* especificaciones */
+.contenedor__especificaciones {
+  height: 550px;
+  display: flex;
+}
+.detalles {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  justify-content: space-between;
+  padding: 3rem;
+}
+.img__lata {
+  width: 100%;
+  background-image: url("/img/img-pepsi.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: flex;
+  justify-content: flex-end;
+  align-items: self-end;
+}
+.militro__porcentajes-lata {
+  background: #fffefe17;
+  width: 150px;
+  height: 220px;
+}
+.porcentaje__lata {
+  width: 100%;
+  background: #528dfa7a;
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+.porcentaje__lata p {
+  font-weight: 800;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+/* .contenedor__titulo{
+    background: #000;
+} */
+.titulo {
+  font-weight: 900;
+  color: #fff;
+  font-size: 45px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.subtitulo {
+  color: #ffffffa6;
+  font-family: sans-serif;
+  font-size: 14px;
+}
+
+/* contenedor cajas */
+.contenedor__caja {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  /* justify-content: space-between; */
+}
+.caja {
+  width: 100px;
+  height: 100px;
+  border: 1px solid #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.caja__footer {
+  background: #f0f0f031;
+  width: 100%;
+  height: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 1px 2px 5px 1px rgb(252, 252, 252);
+}
+.caja p {
+  background: #ffffff13;
+  width: 100%;
+  height: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.cajas__all {
+  display: flex;
+  flex-direction: row;
+}
+.contenedor__especificaciones button {
+  background: none;
+  color: #fff;
+  width: 150px;
+  border-radius: 12px;
+  height: 25px;
+  border: 2px solid #ffffff8e;
+}
+.cantidad__pepsi {
+  height: 100px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+}
+.litros {
+  width: 29px;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+}
+.uno {
+  background-image: url("/img/pepsi3.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.dos {
+  background-image: url("/img/pepsi3.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.tres {
+  background-image: url("/img/pepsi0.5.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.cuatro {
+  background-image: url("/img/pepsi1.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.cinco {
+  background-image: url("/img/pepsi1.5.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.seis {
+  background-image: url("/img/pepsi2.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
