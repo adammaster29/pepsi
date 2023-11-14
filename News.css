@@ -1,0 +1,55 @@
+.padre__news{
+height: 100vh;
+}
+.news__titulo{
+    text-align: center;
+    margin-top: -200px;
+    font-size: 50px;
+    color: white;
+    
+}
+.news__grid{
+    display: grid;
+    grid-template-areas: 
+    "uno  dos  dos"
+    "tres cuatro cinco"
+    ;
+    margin-top: 100px;
+    padding: 5px;
+    gap: 5px;
+}
+.one{grid-area: uno;background: #02084f7b;}
+.two{grid-area: dos;background: #0c4b025c;
+--animate-duration: 3s;}
+.three{
+    grid-area: tres;background: #023c4fad;
+    --animate-duration: 4s;}
+.four{
+    grid-area: cuatro;background: #374f0287;
+    --animate-duration: 5s
+}
+.five{
+    grid-area: cinco;background: #4f19027e;
+    --animate-duration: 6s
+}
+.grid__cards{
+border: 1px solid #000;
+border-radius: 12px;
+text-align: justify;
+padding: 3px;
+}
+h2{
+    color: #ffff;
+    text-shadow: 2px 3px 2px green, -2px 2px 3px white;
+}
+.about__news{
+    font-size: 30px;
+    z-index: 2;
+    margin-top: -50px;
+    margin-left: 20px;
+    position: fixed;
+    text-shadow: 2px 2px 8px rgb(255, 255, 255);
+}
+.about__news:hover{
+    text-shadow: 2px 2px 4px rgb(255, 255, 255);
+}

@@ -1,33 +1,53 @@
 import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 
 const Home = () => {
     const [menu, setMenu] = useState("Amburgueinicial")
     const amburgue = () => {
         setMenu(menu === 'Amburgueinicial' ? "menuAmburgue" : "Amburgueinicial")
     }
+    const[buy,setBuy] = useState(false);
+    const compras = ()=>{
+        setBuy(!buy)
+    }
+    const navegate = useNavigate();
+    const produto  = () =>{
+        navegate("/productos");
+    }
+    const news = ()=>{
+        navegate('/news')
+    }
+    const about = ()=>{
+        navegate("/about")
+    }
     return (
         <div className='padre__home'>
-            <nav className="nav__navbar">
+            <nav className="nav__navbar animate__animated animate__fadeInLeft">
                 <img className='navbar__img-logo' src="/img/logo pepsi.png" alt="img" />
                 <ul className={menu} >
-                    <li>Products</li>
-                    <li>News</li>
-                    <li>About us</li>
+                    <li onClick={produto}>Products</li>
+                    <li onClick={news}>News</li>
+                    <li onClick={about}>About us</li>
                     <li>Contacts</li>
                 </ul>
                 <div className="nav__icon-burgue-buy">
                     <i onClick={amburgue} class='bx bx-menu'></i>
-                    <button className='navbar__button'>Buy Products</button>
+                    <button onClick={compras} className='navbar__button'>Buy Products</button>
                 </div>
-
+                {buy &&(
+                    <div className="padre__modal">
+                        <div className="hijo__modal">
+                        </div>
+                    </div>
+                )}
             </nav>
-            <div className="contenedor__especificaciones">
-                <div className='detalles'>
-                    <div className='contenedor__titulo'>
+            <div className="contenedor__especificaciones ">
+                <div className='detalles '>
+                    <div className='contenedor__titulo animate__animated animate__fadeInLeft'>
                         <h1 className='titulo'>Pepsi Classic</h1>
                         <p className='subtitulo'>"Pepsi Classic has a characteristic and distinctive flavor that combines sweet and slightly citrus notes. It is known for its refreshing and effervescent taste, and its formula has evolved over the years to stay current and appealing to its consumer base."</p>
                     </div>
-                    <div className='contenedor__caja'>
+                    <div className='contenedor__caja animate__animated animate__fadeInLeft'>
                         <h1>Nutrition facts</h1>
                         <div className='cajas__all'>
                             <div className="caja"><p><span>Nutricional</span><span>100cl</span></p><span className='caja__footer'>7%</span></div>
@@ -37,8 +57,8 @@ const Home = () => {
                             <div className="caja"><p><span>Azucares</span><span>4.6g</span></p><span className='caja__footer'>13%</span></div>
                         </div>
                     </div>
-                    <button>Buy Now</button>
-                    <div className='cantidad__pepsi'>
+                    <button className='button-animate animate__animated animate__fadeInLeft'>Buy Now</button>
+                    <div className='cantidad__pepsi animate__animated animate__fadeInLeft'>
                         <div className="litros uno">0.3</div>
                         <div className="litros dos">0.33</div>
                         <div className="litros tres">0.5</div>
@@ -48,7 +68,7 @@ const Home = () => {
 
                     </div>
                 </div>
-                <div className="img__lata">
+                <div className="img__lata animate__animated animate__fadeInRight">
                     <div className="militro__porcentajes-lata">
                         <div className="porcentaje__lata">
                             <p>300 ml</p>
