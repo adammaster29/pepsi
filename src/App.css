@@ -69,17 +69,26 @@ ul {
 .contenedor__titulo{
   --animate-duration:3s;
 }
+.navbar__img-logo{
+  --animate-duration:1.5s;
+}
+.bx-menu{
+  --animate-duration:1.5s;
+}
+.navbar__button{
+  --animate-duration:1.5s;
+}
 .contenedor__caja{
   --animate-duration:4s;
 }
 .button-animate{
-  --animate-duration:5s;
+  --animate-duration:4.5s;
 }
 .cantidad__pepsi{
-  --animate-duration:6s;
+  --animate-duration:4s;
 }
 .img__lata{
-  --animate-duration:7s;
+  --animate-duration:4s;
 }
 
 .detalles {

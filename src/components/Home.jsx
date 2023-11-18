@@ -20,19 +20,22 @@ const Home = () => {
     const about = ()=>{
         navegate("/about")
     }
+    const contacto = ()=>{
+        navegate('/contacto')
+    }
     return (
         <div className='padre__home'>
-            <nav className="nav__navbar animate__animated animate__fadeInLeft">
-                <img className='navbar__img-logo' src="/img/logo pepsi.png" alt="img" />
+            <nav className="nav__navbar ">
+                <img className='navbar__img-logo animate__animated animate__fadeInLeft' src="/img/logo pepsi.png" alt="img" />
                 <ul className={menu} >
                     <li onClick={produto}>Products</li>
                     <li onClick={news}>News</li>
                     <li onClick={about}>About us</li>
-                    <li>Contacts</li>
+                    <li onClick={contacto}>Contacts</li>
                 </ul>
                 <div className="nav__icon-burgue-buy">
-                    <i onClick={amburgue} class='bx bx-menu'></i>
-                    <button onClick={compras} className='navbar__button'>Buy Products</button>
+                    <i onClick={amburgue} class='bx bx-menu animate__animated animate__fadeInRight'></i>
+                    <button onClick={compras} className='navbar__button animate__animated animate__backInDown'>Buy Products</button>
                 </div>
                 {buy &&(
                     <div className="padre__modal">
