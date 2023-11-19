@@ -3,86 +3,93 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 100%;
+    justify-content: space-between;
     background-image: url('/img/mar.gif');
     background-repeat: no-repeat;
-    /* background-size: cover; */
     background-size: 100% 100%;
-    position: absolute;
     width: 100%;
-    z-index: po
+    height: 100vh;
+    overflow: hidden;
 }
 .contacto__title{
-    background: linear-gradient(to right, rgb(255, 255, 255), rgb(130, 140, 197), rgb(255, 255, 255), rgb(153, 155, 157), rgb(133, 133, 181), indigo, violet);
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
-    z-index: 2;
-    text-align: center;
-    margin-top: -165px;
-    position: relative;
-    text-shadow: 2px 3px 3px gray;
+display: flex;
+flex-direction: row-reverse;
+justify-content: center;
+align-items: center;
+width: 100%;
+z-index: 1;
+}
+.title{
+    font-size: 30px;
+    text-shadow: 2px 2px 13px gray;
 }
 .contacto__home{
-    font-size: 35px;
-    position: absolute;
-    text-shadow: 2px 2px 8px rgb(88, 255, 5);
-    margin-left: -25%;
-    margin-top: -3%;
-    color: white;
+width: 50px;
+object-fit: cover;
 }
-.contacto__home:hover{
-    text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.819);
-}
-
-/* ***************sol*************** */
-.contacto__contenedor-cards{
-margin-top: -250px; 
-width: 200px;
-height: 200px;
-border-radius: 50%;
-display: flex;
-background-color: rgba(242, 255, 3, 0.918);
-gap: 0.5rem;
-z-index: 0;
---animate-duration:3s;
-margin-left: 70%;
-filter: drop-shadow(2px 2px 15px rgb(86, 86, 48));
-}
-.contacto-nube{
-    margin-top: 58px;
-    --animate-duration:3.5s;
-}
-
-
-
-/************************** mar****************************** */
-.contacto__svg{
-    z-index: 0;
-}
-/* **************************barco******************** */
-.tarjeta{
-    background-image: url('/img/barco.gif');
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    width:500px ;
-    height: 350px;
+/* ********************sol************* */
+.contenedor__sol{
     display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    --animate-duration:4.5s;
+    flex-direction: row-reverse;
+    width: 100%;
+    height: 150px;
 }
-.tarjeta >i{
-    font-size: 30px;
+.sol{
+    background: rgb(255, 255, 0);
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    position: relative;
+    z-index: 0;
+    margin-top: -90px;
+    --animate-duration:3s;
+    filter: drop-shadow(2px 2px 12px gray);
+}
+.nube{
+    width: 200px;
+    height: 100px;
+    position: absolute;
+    z-index: 1;
+    --animate-duration:3.5s;
+
+}
+/* *******************Barco**************** */
+.contacto__icon-barco{
+ width: 100%;
+ height: 350px;
+display: flex;
+justify-content: center;
+align-items: center;
+position: relative;
+}
+.barco{
+    width: 400px;
+    height: 400px;
+   margin-top: -500px;
+   position: relative;
+   z-index: 0;
+   --animate-duration:4s;
+}
+.icon{
+    display: flex;
+    justify-content: space-between;
+position: absolute;
+z-index: 2;
+margin-top: -500px;
+width: 200px;
+--animate-duration:4.5s;
+}
+.icon > i{
+    font-size: 35px;
 }
 .bx-mail-send{
-    color: rgba(105, 105, 11, 0.882);
-    --animate-duration:3s;
-}
-.bxl-github{
-    --animate-duration:3.4s;
+    color: rgba(87, 87, 3, 0.645);
+    --animate-duration:2.5s;
 }
 .bxl-whatsapp-square{
     color: green;
-    --animate-duration:3.7s;
+    --animate-duration:3s;
+}
+.bxl-github{
+    --animate-duration:3.5s;
 }
